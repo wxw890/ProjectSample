@@ -140,4 +140,49 @@
 <bean class="com.hta.studyroom.controller.SearchReservationController">
 	<property name="studyroomService" ref="studyroomService"></property>
 </bean>
+
+
+
+
+<!-- 책 예약 시스템 관련 been-->
+<bean id="bookService" class="com.hta.book.service.BookServiceImpl">
+
+</bean>
+
+
+<bean class="com.hta.book.controller.BookInputController">
+	<property name="bookService" ref="bookService"></property>
+</bean>
+<bean class="com.hta.book.controller.BookUpdateController">
+	<property name="bookService" ref="bookService"></property>
+</bean>
+
+<bean class="com.hta.book.controller.BookDeleteController">
+	<property name="bookService" ref="bookService"></property>
+</bean>
+
+
+<bean class="com.hta.book.controller.BookInfoController">
+	<property name="bookService" ref="bookService"></property>
+</bean>
+
+<bean class="com.hta.book.controller.BookConditionController">
+<property name="bookService" ref="bookService"></property>
+</bean>
+
+<bean class="com.hta.book.controller.RentalBookController">
+<property name="bookService" ref="bookService"></property>
+</bean>
+
+<bean class="com.hta.book.controller.BookReturnController">
+<property name="bookService" ref="bookService"></property>
+</bean>
+
+<bean class="com.hta.book.controller.BookResController">
+<property name="bookService" ref="bookService"></property>
+</bean>
+
+<bean class="com.hta.book.controller.BookResExtensionController">
+<property name="bookService" ref="bookService"></property>
+</bean>
 </beans>

@@ -12,6 +12,11 @@
   	<typeAlias type="com.hta.freeboard.repository.BoardDto" alias="BoardDto1"/>
   	<typeAlias type="com.hta.QandAboard.repository.BoardDto" alias="BoardDto2"/>
   	<typeAlias type="com.hta.studyroom.repository.StudyroomDto" alias="StudyroomDto" />
+  	<typeAlias type="com.hta.book.repository.BookDto" alias="BookDto"/>
+  	<typeAlias type="com.hta.book.repository.ConditionDto" alias="ConditionDto"/>
+    <typeAlias type="com.hta.book.repository.RentalInfoDto" alias="RentalInfoDto"/>
+    <typeAlias type="com.hta.book.repository.BookandRentalDto" alias="BookandRentalDto"/>
+    <typeAlias type="com.hta.book.repository.BookResDto" alias="BookResDto"/>
   </typeAliases>
   
   <environments default="development"><!-- 여기서 바꿀때 release를 사용할지 development를 사용할지 선택하면 된다. -->
@@ -44,6 +49,7 @@
     <mapper resource="mybatis/freeboardMapper.xml"/><!-- 패키지이름/xml파일 이름 -->
     <mapper resource="mybatis/QandAboardMapper.xml"/><!-- 패키지이름/xml파일 이름 -->
     <mapper resource="mybatis/studyroomMapper.xml"/><!-- 패키지이름/xml파일 이름 -->
+    <mapper resource="mybatis/bookMapper.xml"/><!-- book sql문 -->
   </mappers>
   
 </configuration>

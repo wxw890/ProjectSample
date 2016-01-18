@@ -72,6 +72,8 @@ Modernizr.load({
 <ul>
 	<li><a href="list.board" onclick="fnTest(${email})">게시판</a></li>
 	<li><a href="reservation.study">스터디룸 예약하기</a></li>
+	<li><a href="condition.book">소장자료 검색</a></li>
+	<li><a href="bookinput">도서추가</a></li>
 </ul>
 <div class="call top-call-to-action">
   <div class="row">
@@ -110,6 +112,7 @@ Modernizr.load({
     <div class="large-12 twelve columns hide-for-small">
       <ul class="sf-menu">
         <li><a href="index.jsp">Home</a></li>
+        
      
       
         <li><a href="reservation.study">스터디룸 예약하기</a></li>
@@ -400,3 +403,27 @@ $(document).ready(function () {
 </script>
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
